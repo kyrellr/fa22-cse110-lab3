@@ -89,10 +89,10 @@
         <h2 id="newbiz"><span style="color:rgb(27, 27, 201);font-weight:bold">New Items of Business</span></h2>
         <ol>
             <li><input type="checkbox" /> Outline team strategy</li>
-            <img src="basketball_court.gif" alt="court" width="400">
+            <img src="basketball_court.gif" alt="court" width="350">
             <li><input type="checkbox" /> Scrimmage Schedule</li>
             <li><input type="checkbox" /> Game footage reviews</li>
-            <video controls>
+            <video width="350" controls>
                 <source src="The Best of the Dream Team at the Barcelona 92 Olympics _ Throwback Thursday.mp4" type="video/mp4">
             </video>
             <audio controls>
@@ -102,17 +102,45 @@
     </section>
     </main>
     <footer>
-        <h1>The form element</h1>
+        <h1>Random Form</h1>
 
         <form action="/action_page.php">
-          <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname"><br><br>
-          <label for="lname">Last name:</label>
-          <input type="text" id="lname" name="lname"><br><br>
-          <input type="submit" value="Submit">
+            <fieldset>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="feels">How are you?</label>
+            <select id="feels">
+                <option value="Great">Great</option>
+                <option value="Not so great">Not so great</option>
+                <option value="Kinda great">Kinda great</option>
+                <option value="Amazing">Amazing</option>
+            </select><br>
+            <p>Please select your age:</p>
+                <input type="radio" id="age1" name="age" value="30">
+                <label for="age1">0 - 30</label><br>
+                <input type="radio" id="age2" name="age" value="60">
+                <label for="age2">31 - 60</label><br>  
+                <input type="radio" id="age3" name="age" value="100">
+                <label for="age3">61 - 100</label>
+            <br><br>
+            <label for="browser">Choose your favorie color from the list:</label><br><br>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="Blue">
+                <option value="Red">
+                <option value="Yellow">
+                <option value="Black">
+                <option value="Green">
+            </datalist><br><br>
+            <input type="checkbox" id="form1" name="form1" value="Filled">
+            <label for="form1"> I filled out this form on <input type="date" id="date1" name="date1">.</label><br><br>
+            <textarea id="ta1" name="ta1" rows="4" cols="50">If you have any comments or questions, please type them here.</textarea><br><br>
+            <input type="button" value="Click me!">
+            </fieldset>
         </form>
-        <p>Click the "Submit" button and the form-data will be sent to a page on the 
-        server called "action_page.php".</p>
+        
     </footer>
   </body>
 </html>
