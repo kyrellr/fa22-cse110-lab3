@@ -3,6 +3,11 @@ body {
     background-color: orange;
   }
 
+header {
+    position:relative;
+    top:auto;
+}
+
 /* Style of Notes Sections */
 details {
     color: red;
@@ -29,12 +34,21 @@ ol {
 h3 {
     color:rgb(0, 0, 0);
     font-size:1.25em;
+    max-height: 50px;
+    max-width: 50px;
+    min-height: none;
+    min-width: none;
 }
 
 /* Style of the Notes Sections list */
 a {
     color:red;
     font-size: 14px;
+}
+
+a:hover {
+    background-color: red;
+    color:white;
 }
 
 /* Style of video class */
@@ -58,4 +72,13 @@ h2 {
     padding: 15px 20px 15px 20px; /* shorthand padding; long in index.html*/
     margin: 20px 20px 20px 20px; /* shorthand margins */
     display: block;
+}
+
+h1:active {
+    height: 30px;
+    width: 500px;
+    text-align:center;
+    background-color: #000000;
+    position:absolute;
+    top: 40px; left: 40px;
 }
