@@ -53,7 +53,9 @@ audio {
 
 h2 {
     text-align: center;
+    text-decoration: underline;
     border: 2px solid #000000;
     padding: 15px 20px 15px 20px; /* shorthand padding; long in index.html*/
     margin: 20px 20px 20px 20px; /* shorthand margins */
+    display: block;
 }
