@@ -1,0 +1,44 @@
+/* color of the body */
+body {
+    background-color: orange;
+  }
+
+/* Style of Notes Sections */
+details {
+    color: red;
+    font-size: 1pc;
+    margin-left: 8pt;
+}
+
+/* color of the unordered lists */
+ul {
+    color:white;
+}
+
+/* Style of the ordered lists */
+ol {
+    color:black;
+    font-size: 1.85ex;
+}
+
+/* Style of the h3 texts */
+h3 {
+    color:black;
+    font-size:1.25em;
+}
+
+/* Style of the Notes Sections list */
+a {
+    color:red;
+    font-size: 14px;
+}
+
+/* Width of video class */
+video {
+    width:50vw;
+}
+
+/* Width of audio class */
+audio {
+    width:50vw;
+}
